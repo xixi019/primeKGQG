@@ -1,0 +1,482 @@
+[
+    {
+        "source": "dataset/Bioinformatics/Bgee",
+        "qs": "Number of anatomical entities per species and expression confidence ordered by species common name where the apoc1 gene is expressed",
+        "query": "PREFIX up:<http://purl.uniprot.org/core/> \nPREFIX genex:<http://purl.org/genex#> \nPREFIX obo:<http://purl.obolibrary.org/obo/>\nPREFIX orth:<http://purl.org/net/orth#> \nselect (count(?anatEntity) as ?c) ?specName ?confidence {\n?seq a orth:Gene.\n?expr genex:hasSequenceUnit ?seq.\n?expr genex:hasConfidenceLevel ?confidence.\n?seq rdfs:label ?geneName .\n?expr genex:hasExpressionCondition ?cond.\n?cond genex:hasAnatomicalEntity ?anatEntity.\n?cond obo:RO_0002162 ?taxon. \n?taxon up:commonName ?specName.\nFILTER (LCASE(?geneName) = 'apoc1' )}\ngroup by ?taxon ?confidence ?specName\norder by ?specName",
+        "id": 0
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgee",
+        "qs": "Anatomical entities at the mouse\u2019s adult stage where the apoc1 gene is expressed",
+        "query": "PREFIX up:<http://purl.uniprot.org/core/> \nPREFIX genex:<http://purl.org/genex#> \nPREFIX obo:<http://purl.obolibrary.org/obo/>\nPREFIX orth:<http://purl.org/net/orth#> \nselect distinct ?anatEntity ?anatName {\n?seq a orth:Gene.\n?expr genex:hasSequenceUnit ?seq.\n?seq rdfs:label ?geneName .\n?expr genex:hasExpressionCondition ?cond.\n?cond genex:hasAnatomicalEntity ?anatEntity.\n?anatEntity rdfs:label ?anatName.\n?cond genex:hasDevelopmentalStage ?stage.\n?stage  rdfs:label  ?stageName.\n?cond obo:RO_0002162 ?taxon. \n?taxon up:commonName 'mouse'.\nFILTER ( contains(?stageName,'adult') && LCASE(?geneName) = 'apoc1' )}",
+        "id": 1
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgee",
+        "qs": "the scientific name of species in bgee and their corresponding taxon",
+        "query": "PREFIX up:<http://purl.uniprot.org/core/> \nselect * {\n\t?taxon a up:Taxon. \n\t?taxon up:scientificName ?name.\n\t?taxon up:rank up:Species.\n }",
+        "id": 2
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgee",
+        "qs": "List the labels and identifiers of fruit fly genes in bgee",
+        "query": "PREFIX up:<http://purl.uniprot.org/core/> \nPREFIX orth:<http://purl.org/net/orth#> \nPREFIX obo:<http://purl.obolibrary.org/obo/>\nselect ?gene ?geneName {\n?gene a orth:Gene .\n ?gene rdfs:label ?geneName .\n    ?gene orth:organism ?taxon .\n ?taxon obo:RO_0002162 ?species . \n?taxon up:commonName 'fruit fly'.}",
+        "id": 3
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgee",
+        "qs": "Human anatomical entities at young adult developmental stage",
+        "query": "PREFIX up:<http://purl.uniprot.org/core/> \nPREFIX genex:<http://purl.org/genex#> \nPREFIX obo:<http://purl.obolibrary.org/obo/>\nselect distinct ?anatName {\n?cond genex:hasAnatomicalEntity ?anatEntity.\n?anatEntity rdfs:label ?anatName.\n?cond genex:hasDevelopmentalStage ?stage.\n?stage  rdfs:label  ?stageName.\n?cond obo:RO_0002162 ?taxon. \n?taxon up:commonName 'human'.\nFILTER (contains(?stageName,\"young\") && contains(?stageName,\"adult\") )}",
+        "id": 4
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgee",
+        "qs": "In which species is the Mt-co1 gene present?",
+        "query": "PREFIX up:<http://purl.uniprot.org/core/> \nPREFIX orth:<http://purl.org/net/orth#> \nPREFIX obo:<http://purl.obolibrary.org/obo/>\nselect ?name {\n?gene a orth:Gene. \n ?gene rdfs:label  ?geneName.\n?gene orth:organism ?organism. \n?organism obo:RO_0002162 ?taxon.\n?taxon up:scientificName ?name. \n  FILTER (UCASE(?geneName) = UCASE('Mt-co1') )}",
+        "id": 5
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgee",
+        "qs": "genes with lung in the description",
+        "query": "PREFIX up:<http://purl.uniprot.org/core/> \nPREFIX orth:<http://purl.org/net/orth#> \nPREFIX dcterms:<http://purl.org/dc/terms/>\nselect ?geneName ?geneId {\n?gene a orth:Gene. \n ?gene rdfs:label  ?geneName.\n?gene dcterms:identifier ?geneId.\n ?gene dcterms:description ?desc.\n FILTER CONTAINS(?desc, 'lung')}",
+        "id": 6
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgee",
+        "qs": "Anatomical entities for which apoc1 is not expressed",
+        "query": "PREFIX up:<http://purl.uniprot.org/core/> \nPREFIX genex:<http://purl.org/genex#> \nPREFIX obo:<http://purl.obolibrary.org/obo/>\nPREFIX orth:<http://purl.org/net/orth#> \nselect ?anatEntity ?anatName {\n?anatEntity a genex:AnatomicalEntity. \n?anatEntity rdfs:label ?anatName. \nFILTER NOT EXISTS {\n?seq a orth:Gene.\n?expr genex:hasSequenceUnit ?seq.\n?seq rdfs:label ?geneName .\n?expr genex:hasExpressionCondition ?cond.\n?cond genex:hasAnatomicalEntity ?anatEntity.\n?anatEntity a genex:AnatomicalEntity. \nFILTER (LCASE(?geneName) = 'apoc1' ) } \n}",
+        "id": 7
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgee",
+        "qs": "Anatomical entities where the apoc1 gene is expressed",
+        "query": "PREFIX up:<http://purl.uniprot.org/core/> \nPREFIX genex:<http://purl.org/genex#> \nPREFIX obo:<http://purl.obolibrary.org/obo/>\nPREFIX orth:<http://purl.org/net/orth#> \nselect distinct ?anatEntity ?anatName {\n?seq a orth:Gene.\n?expr genex:hasSequenceUnit ?seq.\n?seq rdfs:label ?geneName .\n?expr genex:hasExpressionCondition ?cond.\n?cond genex:hasAnatomicalEntity ?anatEntity.\n?anatEntity rdfs:label ?anatName.\nFILTER (LCASE(?geneName) = 'apoc1' )}",
+        "id": 8
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgee",
+        "qs": "Anatomical entities in rats where the apoc1 gene is expressed",
+        "query": "PREFIX up:<http://purl.uniprot.org/core/> \nPREFIX genex:<http://purl.org/genex#> \nPREFIX obo:<http://purl.obolibrary.org/obo/>\nPREFIX orth:<http://purl.org/net/orth#> \nselect distinct ?anatEntity ?anatName {\n?seq a orth:Gene.\n?expr genex:hasSequenceUnit ?seq.\n?seq rdfs:label ?geneName .\n?expr genex:hasExpressionCondition ?cond.\n?cond genex:hasAnatomicalEntity ?anatEntity.\n?anatEntity rdfs:label ?anatName.\n?cond obo:RO_0002162 ?taxon. \n?taxon up:commonName 'rat'.\nFILTER (LCASE(?geneName) = 'apoc1' )}",
+        "id": 9
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgeesimple",
+        "qs": "Show all fruit fly genes",
+        "query": "SELECT DISTINCT ?gene  WHERE {\n?gene <http://purl.org/net/orth#organism> ?organism.\n?organism <http://purl.obolibrary.org/obo/RO_0002162> <http://purl.uniprot.org/taxonomy/7227>.\n}",
+        "id": 10
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgeesimple",
+        "qs": "What are the taxa available in Bgee?",
+        "query": "PREFIX up:<http://purl.uniprot.org/core/> \nselect * { ?taxon a up:Taxon.}",
+        "id": 11
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgeesimple",
+        "qs": "show fruit fly developmental stages",
+        "query": "SELECT DISTINCT ?develStage WHERE {\n?expressioncondition <http://purl.org/genex#hasDevelopmentalStage> ?develStage.\n?expressioncondition a <http://purl.org/genex#ExpressionCondition>.\n?taxon <http://purl.uniprot.org/core/scientificName> ?speciesname.\n?expressioncondition <http://purl.obolibrary.org/obo/RO_0002162> ?taxon.\n?taxon <http://purl.uniprot.org/core/commonName> ?taxon_commonname.\nFILTER (contains(lcase(str(?taxon_commonname)), \"fruit fly\"))\n}",
+        "id": 12
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgeesimple",
+        "qs": "Anatomical entities where FBgn0031395 is expressed",
+        "query": "SELECT DISTINCT ?anatomicalentity WHERE {\n?gene <http://purl.obolibrary.org/obo/RO_0002206> ?anatomicalentity \n?anatomicalentity <http://www.w3.org/2000/01/rdf-schema#label> ?anatomicalentity_label.\n?gene a <http://purl.org/net/orth#Gene>.\n?gene <http://purl.org/dc/terms/identifier> ?gene_identifier.\nFILTER (contains(lcase(str(?gene_identifier)), \"\"fbgn0031395\"\"))\n}",
+        "id": 13
+    },
+    {
+        "source": "dataset/Bioinformatics/Bgeesimple",
+        "qs": "show mouse anatomical entities",
+        "query": "SELECT DISTINCT ?anatomicalentity WHERE {\n?expressioncondition <http://purl.org/genex#hasAnatomicalEntity> ?anatomicalentity.\n?expressioncondition <http://purl.obolibrary.org/obo/RO_0002162> <http://purl.uniprot.org/taxonomy/10090>\n}",
+        "id": 14
+    },
+    {
+        "source": "dataset/Bioinformatics/FederatedBgee-OMA",
+        "qs": "rat's tp53 paralog genes that are expressed in the brain",
+        "query": "PREFIX up: <http://purl.uniprot.org/core/>\nPREFIX orth: <http://purl.org/net/orth#>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX lscr: <http://purl.org/lscr#>\nSELECT DISTINCT ?PROTEIN ?IS_PARALOGOUS_TO_PROTEIN ?UNIPROT_XREF ?PARALOG_UNIPROT_XREF ?annotation_text WHERE {\n\tSERVICE <https://sparql.omabrowser.org/sparql/> {\n\t\t?cluster a orth:ParalogsCluster .\n\t\t?cluster orth:hasHomologousMember ?node1 .\n\t\t?cluster orth:hasHomologousMember ?node2 .\n\t\t?node2 orth:hasHomologousMember* ?PROTEIN .\n\t\t?node1 orth:hasHomologousMember* ?IS_PARALOGOUS_TO_PROTEIN .\n\t\t?PROTEIN a orth:Protein .\n\t\t?PROTEIN orth:organism/obo:RO_0002162/up:commonName 'rat' ;\n\t\t\trdfs:label 'TP53' ;\n\t\t\tlscr:xrefUniprot ?UNIPROT_XREF .\n\t\t?IS_PARALOGOUS_TO_PROTEIN a orth:Protein .\n\t\t?IS_PARALOGOUS_TO_PROTEIN orth:organism/obo:RO_0002162/up:scientificName 'Rattus norvegicus' .\n\t\t?IS_PARALOGOUS_TO_PROTEIN lscr:xrefUniprot ?PARALOG_UNIPROT_XREF .\n\t}\n\tSERVICE <http://sparql.uniprot.org/sparql> {\n\t\t?PARALOG_UNIPROT_XREF up:annotation ?annotation .\n\t\t?annotation a up:Function_Annotation .\n\t\t?annotation rdfs:comment ?annotation_text .\n\t}\n\tFILTER ( ?node1 != ?node2 )\n}",
+        "id": 15
+    },
+    {
+        "source": "dataset/Bioinformatics/FederatedBgee-OMA",
+        "qs": "genes in primates orthologous to a gene that is expressed in the fruit fly brain",
+        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX genex: <http://purl.org/genex#>\nPREFIX lscr: <http://purl.org/lscr#>\nPREFIX orth: <http://purl.org/net/orth#>\nPREFIX up: <http://purl.uniprot.org/core/>\nPREFIX sio: <http://semanticscience.org/resource/>\nSELECT ?gene ?OMA_LINK ?uniprot ?annotation_text WHERE {\n\tSELECT * {\n\t\tSERVICE <https://bgee.org/sparql/> {\n\t\t\tSELECT ?gene {\n\t\t\t\t?gene genex:isExpressedIn ?anat .\n\t\t\t\t?anat rdfs:label 'brain' .\n\t\t\t\t?gene orth:organism ?o .\n\t\t\t\t?o obo:RO_0002162 ?taxon .\n\t\t\t\t?taxon up:commonName 'fruit fly' .\n\t\t\t}\n\t\t\tLIMIT 10\n\t\t}\n\t\tSERVICE <https://sparql.omabrowser.org/sparql/> {\n\t\t\tSELECT ?gene ?OMA_LINK ?uniprot{\n\t\t\t\t?protein2 a orth:Protein .\n\t\t\t\t?protein1 a orth:Protein .\n\t\t\t\t?clusterPrimates a orth:OrthologsCluster .\n\t\t\t\t?cluster a orth:OrthologsCluster .\n\t\t\t\t?cluster orth:hasHomologousMember ?node1 .\n\t\t\t\t?cluster orth:hasHomologousMember ?node2 .\n\t\t\t\t?node2 orth:hasHomologousMember* ?clusterPrimates .\n\t\t\t\t?clusterPrimates orth:hasHomologousMember* ?protein2 .\n\t\t\t\t?node1 orth:hasHomologousMember* ?protein1 .\n\t\t\t\t?protein1 sio:SIO_010079 ?gene. #encoded by\n\t\t\t\t?protein2 rdfs:seeAlso ?OMA_LINK .\n\t\t\t\t?clusterPrimates orth:hasTaxonomicRange ?taxRange .\n\t\t\t\t?taxRange orth:taxRange ?taxLevel .\n\t\t\t\tVALUES ?taxLevel { 'Primates' }\n\t\t\t\tFILTER ( ?node1 != ?node2 )\n\t\t\t}\n\t\t}\n\t\tSERVICE <https://sparql.uniprot.org/sparql> {\n\t\t\tSELECT ?annotation_text ?uniprot {\n\t\t\t\t?uniprot up:annotation ?annotation .\n\t\t\t\t?annotation rdfs:comment ?annotation_text .\n\t\t\t}\n\t\t}\n\t}\n}",
+        "id": 16
+    },
+    {
+        "source": "dataset/Bioinformatics/FederatedBgee-OMA",
+        "qs": "paralogs of genes expressed in the liver of the rat",
+        "query": "PREFIX up: <http://purl.uniprot.org/core/>\nPREFIX genex: <http://purl.org/genex#>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX orth: <http://purl.org/net/orth#>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nSELECT DISTINCT ?id ?OMA_LINK WHERE {\n\tSELECT * {\n\t\tSERVICE <https://bgee.org/sparql/> {\n\t\t\tSELECT DISTINCT ?gene ?id {\n\t\t\t\t?gene a orth:Gene .\n\t\t\t\t?gene genex:isExpressedIn ?cond .\n\t\t\t\t?cond genex:hasAnatomicalEntity ?anat .\n\t\t\t\t?anat rdfs:label 'liver' .\n\t\t\t\t?gene orth:organism ?o .\n\t\t\t\t?o obo:RO_0002162 ?taxon .\n\t\t\t\t?gene dcterms:identifier ?id .\n\t\t\t\t?taxon up:commonName 'rat' .\n\t\t\t}\n\t\t\tLIMIT 10\n\t\t}\n\t\tSERVICE <https://sparql.omabrowser.org/lode/sparql> {\n\t\t\t?cluster a orth:ParalogsCluster .\n\t\t\t?cluster orth:hasHomologousMember ?node1 .\n\t\t\t?cluster orth:hasHomologousMember ?node2 .\n\t\t\t?node2 orth:hasHomologousMember* ?protein2 .\n\t\t\t?node1 orth:hasHomologousMember* ?protein1 .\n\t\t\t?protein1 dcterms:identifier ?id .\n\t\t\t?protein2 rdfs:seeAlso ?OMA_LINK .\n\t\t\tFILTER ( ?node1 != ?node2 )\n\t\t}\n\t}\n}",
+        "id": 17
+    },
+    {
+        "source": "dataset/Bioinformatics/FederatedBgee-OMA",
+        "qs": "mouse proteins which are expressed in the liver and are orthologous to human INS protein .",
+        "query": "PREFIX up: <http://purl.uniprot.org/core/>\nPREFIX genex: <http://purl.org/genex#>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX orth: <http://purl.org/net/orth#>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX lscr: <http://purl.org/lscr#>\nSELECT ?name1 ?protein1 ?name2 ?protein2 ?OMA_link2 ?anatomicalEntity {\n\tSELECT DISTINCT * {\n\t\tSERVICE <https://bgee.org/sparql/> {\n\t\t\t?taxon up:commonName 'human' ;\n\t\t\t\tup:commonName ?name1 .\n\t\t\t?taxon2 up:commonName 'mouse' ;\n\t\t\t\tup:commonName ?name2 .\n\t\t}\n\t\tSERVICE <https://sparql.omabrowser.org/sparql/> {\n\t\t\t?cluster a orth:OrthologsCluster .\n\t\t\t?cluster orth:hasHomologousMember ?node1 .\n\t\t\t?cluster orth:hasHomologousMember ?node2 .\n\t\t\t?node2 orth:hasHomologousMember* ?protein2 .\n\t\t\t?node1 orth:hasHomologousMember* ?protein1 .\n\t\t\t?protein1 a orth:Protein .\n\t\t\t?protein1 rdfs:label 'INS' ;\n\t\t\t\torth:organism/obo:RO_0002162 ?taxon .\n\t\t\t?protein2 a orth:Protein ;\n\t\t\t\tsio:SIO_010079 ?gene ; #is encoded by\n\t\t\t\torth:organism/obo:RO_0002162 ?taxon2 .\n\t\t\t?gene lscr:xrefEnsemblGene ?geneEns .\n\t\t\t?protein2 rdfs:seeAlso ?OMA_link2 .\n\t\t\tFILTER ( ?node1 != ?node2 )\n\t\t}\n\t\tSERVICE <https://bgee.org/sparql/> {\n\t\t\t?geneB a orth:Gene .\n\t\t\t\t?geneB genex:isExpressedIn ?cond .\n\t\t\t\t?cond genex:hasAnatomicalEntity ?anat .\n\t\t\t\t?geneB lscr:xrefEnsemblGene ?geneEns .\n\t\t\t?anat rdfs:label 'liver' ;\n\t\t\t\trdfs:label ?anatomicalEntity .\n\t\t\t?geneB orth:organism ?o .\n\t\t\t?o obo:RO_0002162 ?taxon2 .\n\t\t}\n\t}\n\tLIMIT 10\n}\nLIMIT 10",
+        "id": 18
+    },
+    {
+        "source": "dataset/Bioinformatics/FederatedBgee-OMA",
+        "qs": "The orthologs of a gene that is expressed in the fruit fly brain",
+        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX genex: <http://purl.org/genex#>\nPREFIX lscr: <http://purl.org/lscr#>\nPREFIX orth: <http://purl.org/net/orth#>\nPREFIX up: <http://purl.uniprot.org/core/>\nPREFIX sio: <http://semanticscience.org/resource/>\nSELECT distinct ?gene_id ?orthologousTo ?uniprot ?annotation_text WHERE {\n\tSERVICE <https://bgee.org/sparql/> {\n\t\tSELECT ?gene ?gene_id {\n\t\t\t?gene a orth:Gene .\n\t\t\t?gene genex:isExpressedIn ?cond .\n\t\t\t?cond genex:hasAnatomicalEntity ?anat .\n\t\t\t?gene dcterms:identifier ?gene_id .\n\t\t\t?anat rdfs:label 'brain' .\n\t\t\t?gene orth:organism ?o .\n\t\t\t?o obo:RO_0002162 ?taxon .\n\t\t\t?taxon up:commonName \"fruit fly\" .\n\t\t}\n\t\tLIMIT 10\n\t}\n\tSERVICE <https://sparql.omabrowser.org/sparql/> {\n\t\tSELECT ?uniprot ?gene ?orthologousTo {\n\t\t\t?cluster a orth:OrthologsCluster .\n\t\t\t?cluster orth:hasHomologousMember ?node1 .\n\t\t\t?cluster orth:hasHomologousMember ?node2 .\n\t\t\t?node2 orth:hasHomologousMember* ?orthologousTo .\n\t\t\t?node1 orth:hasHomologousMember* ?protein1 .\n\t\t\t?protein1 sio:SIO_010079 ?gene .\n\t\t\tfilter(?node1 != ?node2)\n\t\t}\n\t}\n\tSERVICE <http://sparql.uniprot.org/sparql>{\n\t\t?uniprot up:annotation ?annotation .\n\t\t?annotation rdfs:comment ?annotation_text .\n\t}\n}",
+        "id": 19
+    },
+    {
+        "source": "dataset/Bioinformatics/OMA",
+        "qs": "Retrieve all proteins per species that are orthologous to Oryctolagus cuniculus' APOCI or APOC1 related protein and their cross reference to Uniprot including Ensembl gene identifier.",
+        "query": "prefix sio:<http://semanticscience.org/resource/>\nprefix obo:<http://purl.obolibrary.org/obo/>\nselect ?protein1    ?protein2  ?geneName2  ?species2 ?OMA_LINK2 ?Prot2_uniprot ?prot2_ensemblGeneId  \nwhere {\n?cluster a orth:OrthologsCluster.\n?cluster orth:hasHomologousMember ?node1.\n?cluster orth:hasHomologousMember ?node2. \n?node2 orth:hasHomologousMember* ?protein2. \n?node1 orth:hasHomologousMember* ?protein1.\n?protein1 a orth:Protein;\north:organism/obo:RO_0002162/up:scientificName 'Oryctolagus cuniculus';\nrdfs:label 'APOCI'.\n?protein2 a orth:Protein; \nrdfs:seeAlso ?OMA_LINK2;\nlscr:xrefUniprot ?Prot2_uniprot;\nsio:SIO_010079/lscr:xrefEnsemblGene/dct:identifier  ?prot2_ensemblGeneId;\nrdfs:label ?geneName2;\north:organism/obo:RO_0002162/up:scientificName ?species2.\nfilter(?node1 != ?node2)}",
+        "id": 20
+    },
+    {
+        "source": "dataset/Bioinformatics/OMA",
+        "qs": "Retrieve proteins that are paralogous to ENSLACG00000002497 ",
+        "query": "prefix sio:<http://semanticscience.org/resource/>\nselect ?OMA_LINK \nwhere {\n?cluster a orth:ParalogsCluster.\n?cluster orth:hasHomologousMember ?node1.\n?cluster orth:hasHomologousMember ?node2. \n?node2 orth:hasHomologousMember* ?protein2. \n?node1 orth:hasHomologousMember* ?protein1.\n?protein1 sio:SIO_010079?gene . \n?gene lscr:xrefEnsemblGene  ensembl:ENSLACG00000002497.\n?protein2 rdfs:seeAlso ?OMA_LINK. \nfilter(?node1 != ?node2) \n}",
+        "id": 21
+    },
+    {
+        "source": "dataset/Bioinformatics/OMA",
+        "qs": "Retrieve Oryctolagus cuniculus' proteins encoded by genes that are orthologous to Mus musculus' HBB-Y gene and their cross reference links to Uniprot",
+        "query": "prefix sio:<http://semanticscience.org/resource/>\nprefix obo:<http://purl.obolibrary.org/obo/>\nselect distinct ?MOUSE_PROTEIN ?RABIT_PROTEIN ?MOUSE_UNIPROT_XREF ?RABIT_UNIPROT_XREF \nwhere {\n?cluster a orth:OrthologsCluster.\n?cluster orth:hasHomologousMember ?node1.\n?cluster orth:hasHomologousMember ?node2. \n?node2 orth:hasHomologousMember* ?RABIT_PROTEIN. \n?node1 orth:hasHomologousMember* ?MOUSE_PROTEIN.\n?MOUSE_PROTEIN a orth:Protein.\n?MOUSE_PROTEIN  orth:organism/obo:RO_0002162/up:scientificName 'Mus musculus';\nrdfs:label 'HBB-Y';\nlscr:xrefUniprot ?MOUSE_UNIPROT_XREF.\n?RABIT_PROTEIN a orth:Protein.\n?RABIT_PROTEIN orth:organism/obo:RO_0002162/up:scientificName 'Oryctolagus cuniculus' .\n?RABIT_PROTEIN lscr:xrefUniprot ?RABIT_UNIPROT_XREF.\nfilter(?node1 != ?node2)}",
+        "id": 22
+    },
+    {
+        "source": "dataset/Bioinformatics/OMA",
+        "qs": "Retrieve proteins that are paralogous to the human HBB and their cross reference to Uniprot.",
+        "query": "select ?protein2  ?Oma_link  ?Uniprot_link{\n?cluster a orth:ParalogsCluster.\n?cluster orth:hasHomologousMember ?node1.\n?cluster orth:hasHomologousMember ?node2.\n?node2 orth:hasHomologousMember* ?protein2.\n?node1 orth:hasHomologousMember* ?protein1.\n?protein1 a orth:Protein.\n?protein1 rdfs:label 'HBB'. \n?protein1 orth:organism ?organism.\n?inTaxon rdfs:label 'in taxon'@en.\n?organism ?inTaxon ?taxon.\n?taxon  up:scientificName 'Homo sapiens'.\n?protein2 a orth:Protein. \n?protein2  lscr:xrefUniprot ?Uniprot_link. \nfilter(?node1 != ?node2)\n}",
+        "id": 23
+    },
+    {
+        "source": "dataset/Bioinformatics/OMA",
+        "qs": "show all drosophila species",
+        "query": "SELECT DISTINCT ?rank ?rank_label ?speciesname ?taxon ?taxon_scientificname WHERE {\n?taxon a <http://purl.uniprot.org/core/Taxon>.\n?taxon <http://purl.uniprot.org/core/rank> <http://purl.uniprot.org/core/Species>.\n?taxon <http://purl.uniprot.org/core/scientificName> ?speciesname.\n?taxon <http://purl.uniprot.org/core/scientificName> ?taxon_scientificname.\nFILTER (contains(lcase(str(?taxon_scientificname)), \"drosophila\"))\n}",
+        "id": 24
+    },
+    {
+        "source": "dataset/Bioinformatics/OMA",
+        "qs": "Retrieve proteins that are orthologous to the human HBB and their cross reference to Uniprot.",
+        "query": "select ?protein2  ?Oma_link  ?Uniprot_link{\n?cluster a orth:OrthologsCluster.\n?cluster orth:hasHomologousMember ?node1.\n?cluster orth:hasHomologousMember ?node2.\n?node2 orth:hasHomologousMember* ?protein2.\n?node1 orth:hasHomologousMember* ?protein1.\n?protein1 a orth:Protein.\n?protein1 rdfs:label 'HBB'. \n?protein1 orth:organism ?organism.\n?inTaxon rdfs:label 'in taxon'@en.\n?organism ?inTaxon ?taxon.\n?taxon  up:scientificName 'Homo sapiens'.\n?protein2 a orth:Protein. \n?protein2  lscr:xrefUniprot ?Uniprot_link. \nfilter(?node1 != ?node2)\n}",
+        "id": 25
+    },
+    {
+        "source": "dataset/Bioinformatics/OMA",
+        "qs": "show me all rat proteins",
+        "query": "select ?name \nwhere {\n?protein a orth:Protein.\n?protein  orth:organism ?organism.\n?inTaxon rdfs:label 'in taxon'@en.\n?organism ?inTaxon ?taxon.\n?taxon  up:scientificName 'Rattus norvegicus'.\n?protein rdfs:label ?name.\n}",
+        "id": 26
+    },
+    {
+        "source": "dataset/Bioinformatics/OMA",
+        "qs": "What's the percentage of proteins in Drosophila melanogaster that have at least one paralogous protein?",
+        "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/>\nPREFIX oma: <http://omabrowser.org/ontology/oma#>\nPREFIX orth: <http://purl.org/net/orth#>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX lscr: <http://purl.org/lscr#>\nselect (((xsd:float(?num_paralogy)*100)/xsd:float(?total)) as ?result) \n   where   { \n { \nselect (count(distinct ?PROTEIN) as ?num_paralogy ) \n    where { \n       ?cluster a orth:ParalogsCluster. \n       ?cluster orth:hasHomologousMember ?node1. \n       ?cluster orth:hasHomologousMember ?node2.  \n       ?node2 orth:hasHomologousMember* ?PROTEIN.  \n       ?node1 orth:hasHomologousMember* ?IS_PARALOGOUS_TO_PROTEIN. \n       ?PROTEIN a orth:Protein. \n       ?PROTEIN orth:organism/obo:RO_0002162/up:scientificName ?species. \n       ?IS_PARALOGOUS_TO_PROTEIN a orth:Protein. \n       ?IS_PARALOGOUS_TO_PROTEIN orth:organism/obo:RO_0002162/up:scientificName ?species . \n       values(?species ){( 'Drosophila melanogaster' )} \n       filter(?node1 != ?node2) } \n           } \n{ \nselect (count(distinct ?protein_total) as ?total) where  \n   {?protein_total a orth:Protein.  \n    ?protein_total orth:organism/obo:RO_0002162/up:scientificName ?species. \n    values(?species ){( 'Drosophila melanogaster' )} \n    } \n}} ",
+        "id": 27
+    },
+    {
+        "source": "dataset/Bioinformatics/OMA",
+        "qs": "How many proteins (and their labels) per species are present in OMA database?",
+        "query": "select ?taxon ?name count(?protein) as ?Protein_count\nwhere {\n?protein a orth:Protein.\n?protein  orth:organism ?organism.\n?inTaxon rdfs:label 'in taxon'@en.\n?organism ?inTaxon ?taxon.\n?taxon  up:scientificName ?name.\n}group by ?taxon ?name",
+        "id": 28
+    },
+    {
+        "source": "dataset/Bioinformatics/OMA",
+        "qs": "Retrieve all proteins that are orthologous to ENSLACG00000002497 ",
+        "query": "prefix sio:<http://semanticscience.org/resource/>\nselect  ?OMA_LINK \nwhere {\n?cluster a orth:OrthologsCluster.\n?cluster orth:hasHomologousMember ?node1.\n?cluster orth:hasHomologousMember ?node2. \n?node2 orth:hasHomologousMember* ?protein2. \n?node1 orth:hasHomologousMember* ?protein1.\n?protein1 sio:SIO_010079 ?gene . \n?gene lscr:xrefEnsemblGene  ensembl:ENSLACG00000002497.\n?protein2 rdfs:seeAlso ?OMA_LINK. \nfilter(?node1 != ?node2) \n}",
+        "id": 29
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which diseases are associated with SAR1B?",
+        "query": "SELECT DISTINCT ?c WHERE {?c a <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/diseases>. ?c <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/associatedGene> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/SAR1B>. }",
+        "id": 30
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "List the number of distinct side-effects of drugs which target genes whose general function involves cell division.",
+        "query": "SELECT COUNT(DISTINCT ?y) WHERE {?x <http://www.w3.org/2002/07/owl#sameAs> ?z. ?z <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?y. ?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/target> ?a. ?a <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/generalFunction> ?l. FILTER(contains(str(?l), cell division))}",
+        "id": 31
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which diseases have a class degree of 11?",
+        "query": "SELECT DISTINCT ?x WHERE {?x <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/classDegree> 11^^<http://www.w3.org/2001/XMLSchema#int>}",
+        "id": 32
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Are there drugs that target the Protein kinase C beta type?",
+        "query": "ASK WHERE {?a <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/target> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/targets/997> }",
+        "id": 33
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which drugs have no side-effects?",
+        "query": "SELECT DISTINCT ?z WHERE {{?z a <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/drugs>} MINUS {?z <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?y.} }",
+        "id": 34
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Give me all diseases of the connective tissue class.",
+        "query": "SELECT DISTINCT ?a WHERE {?a <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/class> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseaseClass/Connective_tissue>. }",
+        "id": 35
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which disease has the largest size?",
+        "query": "SELECT DISTINCT ?k WHERE {?k <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/size> ?l} ORDER BY DESC(?l) LIMIT 1",
+        "id": 36
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which drugs interact with food and have HIV infections as side-effects?",
+        "query": "SELECT DISTINCT ?x WHERE {?x a <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs>. ?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/foodInteraction> ?k. ?x <http://www.w3.org/2002/07/owl#sameAs> ?z. ?z <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> <http://www4.wiwiss.fu-berlin.de/sider/resource/side_effects/C0019693> }",
+        "id": 37
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Give me diseases whose possible drugs target the elongation factor 2.",
+        "query": "SELECT DISTINCT ?x WHERE {?x <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/possibleDrug> ?y. ?y <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/target> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/targets/3341>}",
+        "id": 38
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which genes are associated with Endothelin receptor type B?",
+        "query": "SELECT DISTINCT ?x \nWHERE {?x <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/associatedGene> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/EDNRB>}",
+        "id": 39
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "List drugs that lead to strokes and arthrosis.",
+        "query": "SELECT DISTINCT ?x WHERE {?x <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?k. ?k <http://www.w3.org/2002/07/owl#sameAs> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/1098>. ?x <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> <http://www4.wiwiss.fu-berlin.de/sider/resource/side_effects/C0022408>}",
+        "id": 40
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which drugs have bipolar disorder as indication?",
+        "query": "SELECT DISTINCT ?x WHERE {?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/indication> ?k. FILTER (contains (str(?k), bipolar disorder)) }",
+        "id": 41
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which drugs have a water solubility of 2.78e-01 mg/mL?",
+        "query": "SELECT DISTINCT ?x WHERE {?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/predictedWaterSolubility> 2.78e-01 mg/mL.}",
+        "id": 42
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which targets are involved in blood clotting?",
+        "query": "SELECT DISTINCT ?a WHERE {?a <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/generalFunction> ?l. FILTER(contains(str(?l), blood clotting))}",
+        "id": 43
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which drug has the highest number of side-effects?",
+        "query": "SELECT DISTINCT ?x WHERE {?x <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?y. } group by ?x order by desc(count(?y)) limit 1",
+        "id": 44
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which genes are associated with subtypes of rickets?",
+        "query": "\nSELECT DISTINCT ?z WHERE {?x <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/diseaseSubtypeOf> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/1004>. ?x <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/associatedGene> ?z. }",
+        "id": 45
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Give me the drug categories of Desoxyn.",
+        "query": "SELECT DISTINCT ?y WHERE {?k <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/brandName> Desoxyn. ?k <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugCategory> ?y }",
+        "id": 46
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which approved drugs interact with fibers?",
+        "query": "SELECT DISTINCT ?x WHERE {?x a <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs>. ?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugType> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugtype/approved>. ?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/foodInteraction> ?k. FILTER (contains(str(?k), fibers)) }",
+        "id": 47
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which drugs achieve a protein binding of 100%?",
+        "query": "select distinct ?x where {?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/proteinBinding> 100% }",
+        "id": 48
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Give me drugs in the gaseous state.",
+        "query": "SELECT DISTINCT ?k WHERE {?k <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/state> Gas }",
+        "id": 49
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Give me the side-effects drugs with a solubility of 3.24e-02 mg/mL.",
+        "query": "SELECT DISTINCT ?k WHERE {?x <http://www.w3.org/2002/07/owl#sameAs> ?y. ?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/predictedWaterSolubility> 3.24e-02 mg/mL. ?y <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?k}",
+        "id": 50
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which experimental drugs interact with food?",
+        "query": "SELECT DISTINCT ?x WHERE {?x a <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs>. ?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugType> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugtype/experimental>. ?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/foodInteraction> ?k. }",
+        "id": 51
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "List diseases whose possible drugs have no side effects.",
+        "query": "SELECT DISTINCT ?k WHERE {{?k <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/possibleDrug> ?l. ?l <http://www.w3.org/2002/07/owl#sameAs> ?z. ?z a <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/drugs>} MINUS {?z <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?y.} }",
+        "id": 52
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "List illnesses that are treated by drugs whose mechanism of action involves norepinephrine and serotonin.",
+        "query": "SELECT DISTINCT ?a WHERE {?a <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/possibleDrug> ?x. ?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/mechanismOfAction> ?y. FILTER(contains(str(?y), norepinephrine)) . FILTER(contains(str(?y), serotonin)) }",
+        "id": 53
+    },
+    {
+        "source": "dataset/QALD4/test",
+        "qs": "Which is the least common chromosome location?",
+        "query": "SELECT DISTINCT ?b WHERE {?a <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chromosomeLocation> ?b } GROUP BY (?b) ORDER BY ASC(COUNT(?a)) LIMIT 1",
+        "id": 54
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Give me diseases treated by tetracycline",
+        "query": "SELECT DISTINCT ?x \nWHERE { \n        ?x a <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/diseases>. \n        ?x <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/possibleDrug> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00759>. \n}",
+        "id": 55
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "What are the common side effects of Doxil and Bextra?",
+        "query": "SELECT DISTINCT ?y \nWHERE { \n        <http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/1690> <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?y. \n        <http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/119607> <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?y.\n}",
+        "id": 56
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which genes are associated with diseases whose possible drugs target Cubilin?",
+        "query": "SELECT DISTINCT ?z \nWHERE {\n        ?s <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/associatedGene> ?z. \n        ?s <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/possibleDrug> ?x. \n        ?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/target> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/targets/1224>.\n}",
+        "id": 57
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which genes are associated with diseases treated with Cetuximab?",
+        "query": "SELECT DISTINCT ?v1 \nWHERE { \n        ?v0 a <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/diseases>. \n        ?v0 <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/associatedGene> ?v1. \n        ?v0 <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/possibleDrug> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00002>. \n}",
+        "id": 58
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which are the drugs whose side effects are associated with the gene TRPM6?",
+        "query": "SELECT DISTINCT ?x \nWHERE {\n        ?x <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/associatedGene> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/TRPM6>. \n        ?x owl:sameAs ?k. \n        ?l <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?k . \n}",
+        "id": 59
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which drugs have hypertension and vomiting as side-effects?",
+        "query": "SELECT DISTINCT ?s \nWHERE { \n        ?s <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> <http://www4.wiwiss.fu-berlin.de/sider/resource/side_effects/C0020538>. \n        ?s <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> <http://www4.wiwiss.fu-berlin.de/sider/resource/side_effects/C0042963>.\n}",
+        "id": 60
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which are targets of Hydroxocobalamin?",
+        "query": "SELECT DISTINCT ?x \nWHERE {\n        <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00200> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/target> ?x.\n}",
+        "id": 61
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which foods does allopurinol interact with?",
+        "query": "SELECT DISTINCT ?l0 \nWHERE { \n        <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00437> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/foodInteraction> ?l0. \n}",
+        "id": 62
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "What are enzymes of drugs used for anemia?",
+        "query": "SELECT DISTINCT ?v1 \nWHERE { \n        ?v0 <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/enzyme> ?v1. \n        ?x <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/possibleDrug> ?v0.\n        ?x rdfs:label ?l.\n        FILTER(REGEX(?l,'Anemia','i')). \n}",
+        "id": 63
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which diseases is Cetuximab used for?",
+        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?v\nWHERE {\n        ?x rdfs:label ?l.\n        FILTER(REGEX(?l,'Cetuximab','i')).\n        ?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/possibleDiseaseTarget> ?v.\n        ?v a <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/diseases>.\n}",
+        "id": 64
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "What are the side effects of Valdecoxib?",
+        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?x\nWHERE {\n        ?v1 rdfs:label ?l.\n        FILTER(REGEX(?l,'Valdecoxib','i')).\n        ?v2 <http://www.w3.org/2002/07/owl#sameAs> ?v1.\n        ?v2 <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?x.\n}",
+        "id": 65
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which are targets for possible drugs for diseases associated with the gene ALD?",
+        "query": "SELECT DISTINCT ?z\nWHERE {\n        ?s <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/associatedGene> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALD>. \n        ?s <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/possibleDrug> ?x. \n        ?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/target> ?z.\n}",
+        "id": 66
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which genes are associated with breast cancer?",
+        "query": "SELECT DISTINCT ?x\nWHERE { \n        <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/1669> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/associatedGene> ?x. \n}",
+        "id": 67
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which are possible drugs against rickets?",
+        "query": "SELECT DISTINCT ?x \nWHERE {\n        <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/1004> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/possibleDrug> ?x.\n}",
+        "id": 68
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "What is the side effects of drugs used for Tuberculosis?",
+        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?x\nWHERE {\n        <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/1154> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/possibleDrug> ?v2.\n        ?v2 a <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs>.\n        ?v3 <http://www.w3.org/2002/07/owl#sameAs> ?v2.\n        ?v3 <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?x.\n}",
+        "id": 69
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "What are the diseases caused by Valdecoxib?",
+        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?x\nWHERE {\n        ?v1 rdfs:label ?l.\n        FILTER(REGEX(?l,'Valdecoxib','i')).\n        ?v2 <http://www.w3.org/2002/07/owl#sameAs> ?v1.\n        ?v2 <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?x.\n        ?x a ?c.\n        ?c <http://www.w3.org/2002/07/owl#sameAs> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/diseases>.\n}",
+        "id": 70
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which diseases are associated with the gene FOXP2?",
+        "query": "SELECT DISTINCT ?x\nWHERE {\n        ?x <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/associatedGene> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/FOXP2>.\n}",
+        "id": 71
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "What are side effects of drugs used for asthma?",
+        "query": "SELECT DISTINCT ?v3 ?v1 \nWHERE { \n        <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/116> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/possibleDrug> ?v2. \n        ?v0 <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?v1. \n        ?v2 <http://www.w3.org/2002/07/owl#sameAs> ?v0. \n}",
+        "id": 72
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "What is the target drug of Vidarabine?",
+        "query": "SELECT DISTINCT ?v0 \nWHERE { \n        <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00194> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/target> ?v0. \n}",
+        "id": 73
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which are possible drugs for diseases associated with the gene ALD?",
+        "query": "SELECT DISTINCT ?x \nWHERE {\n        ?s <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/associatedGene> <http://www4.wiwiss.fu-berlin.de/diseasome/resource/genes/ALD>. \n        ?s <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/possibleDrug> ?x.\n}",
+        "id": 74
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which drugs have fever as a side effect?",
+        "query": "SELECT DISTINCT ?x \nWHERE { \n        ?x a <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/drugs>. \n        ?x <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> <http://www4.wiwiss.fu-berlin.de/sider/resource/side_effects/C0015967>. \n}",
+        "id": 75
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which drugs interact with allopurinol?",
+        "query": "SELECT DISTINCT ?x \nWHERE { \n        ?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/interactionDrug1> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00437>. \n}",
+        "id": 76
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which are the side effects of Penicillin G?",
+        "query": "SELECT DISTINCT ?s \nWHERE { \n        ?x owl:sameAs <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB01053>. \n        ?x <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/sideEffect> ?s.\n}",
+        "id": 77
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Which drugs target Multidrug resistance protein 1?",
+        "query": "SELECT DISTINCT ?v1 \nWHERE { \n        ?v1 a <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs>. \n        ?v1 <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/target> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/targets/1588>. \n}",
+        "id": 78
+    },
+    {
+        "source": "dataset/QALD4/train",
+        "qs": "Give me drug references of drugs targeting Prothrombin.",
+        "query": "SELECT DISTINCT ?v0\nWHERE { \n        <http://www4.wiwiss.fu-berlin.de/drugbank/resource/targets/3579> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugReference> ?v0. \n        ?v1 <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/target> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/targets/3579>. \n}",
+        "id": 79
+    }
+]

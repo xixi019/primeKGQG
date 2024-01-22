@@ -1,0 +1,42 @@
+# What's the percentage of proteins in Drosophila melanogaster that have at least one paralogous protein?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/>
+PREFIX oma: <http://omabrowser.org/ontology/oma#>
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX taxon: <http://purl.uniprot.org/taxonomy/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX lscr: <http://purl.org/lscr#>
+select (((xsd:float(?num_paralogy)*100)/xsd:float(?total)) as ?result) 
+   where   { 
+ { 
+select (count(distinct ?PROTEIN) as ?num_paralogy ) 
+    where { 
+       ?cluster a orth:ParalogsCluster. 
+       ?cluster orth:hasHomologousMember ?node1. 
+       ?cluster orth:hasHomologousMember ?node2.  
+       ?node2 orth:hasHomologousMember* ?PROTEIN.  
+       ?node1 orth:hasHomologousMember* ?IS_PARALOGOUS_TO_PROTEIN. 
+       ?PROTEIN a orth:Protein. 
+       ?PROTEIN orth:organism/obo:RO_0002162/up:scientificName ?species. 
+       ?IS_PARALOGOUS_TO_PROTEIN a orth:Protein. 
+       ?IS_PARALOGOUS_TO_PROTEIN orth:organism/obo:RO_0002162/up:scientificName ?species . 
+       values(?species ){( 'Drosophila melanogaster' )} 
+       filter(?node1 != ?node2) } 
+           } 
+{ 
+select (count(distinct ?protein_total) as ?total) where  
+   {?protein_total a orth:Protein.  
+    ?protein_total orth:organism/obo:RO_0002162/up:scientificName ?species. 
+    values(?species ){( 'Drosophila melanogaster' )} 
+    } 
+}} 
