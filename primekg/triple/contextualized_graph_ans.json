@@ -1,0 +1,2502 @@
+[
+    {
+        "type": "7",
+        "value": [
+            [
+                "spinal cord",
+                "associated%20with",
+                "mitochondrion inheritance"
+            ],
+            [
+                "mitochondrion inheritance",
+                "associated%20with",
+                "spinal cord"
+            ],
+            [
+                "mitochondrion inheritance",
+                "associated%20with",
+                "spinal cord"
+            ]
+        ],
+        "context": [
+            "Can mitochondria transfer from cell to cell?",
+            "Can mitochondria be inherited by both parents in humans?"
+        ],
+        "answer_GPT3": "Question: How is mitochondrial inheritance associated with the spinal cord?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "guanosine pentaphosphate catabolic process",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between guanosine pentaphosphate catabolic process and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "guanosine pentaphosphate catabolic process",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, the proposed question could be:\n\nIs the inhibition of S-methylmethionine transmembrane transporter activity associated with the mechanism of action of the drug Canagliflozin?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "guanosine pentaphosphate catabolic process",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between the Guanosine pentaphosphate catabolic process and the S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "guanosine pentaphosphate catabolic process",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts provided, the proposed question is:\n\n\"Is there a direct association between guanosine pentaphosphate catabolic process and intracellularly ATP-gated chloride channel activity?\"\n\nExample question:\n\n\"What is the indirect association between guanosine pentaphosphate catabolic process and the mechanism of action of Canagliflozin?\""
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "guanosine pentaphosphate catabolic process",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts provided, a question could be:\n\nIs there a potential connection between guanosine pentaphosphate catabolic process and Progressive language deterioration?\n\nSome example questions could be:\n\n1) How does S-methylmethionine transmembrane transporter activity relate to guanosine pentaphosphate catabolic process?\n2) Are there any known inhibitors or activators of S-methylmethionine transmembrane transporter activity?\n3) Are there any diseases or conditions associated with disruptions in guanosine pentaphosphate catabolic process or S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "guanosine pentaphosphate catabolic process",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between guanosine pentaphosphate catabolic process, S-methylmethionine transmembrane transporter activity, and hydroxypyruvate isomerase activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "guanosine pentaphosphate catabolic process",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between guanosine pentaphosphate catabolic process and S-methylmethionine transmembrane transporter activity in the context of subepithelial connective tissue of the prostatic gland?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "guanosine pentaphosphate catabolic process",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between guanosine pentaphosphate catabolic process and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "guanosine pentaphosphate catabolic process",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the three facts provided, the proposed question is: Is there a functional association between the guanosine pentaphosphate catabolic process and the S-methylmethionine transmembrane transporter activity in any biological context?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "guanosine pentaphosphate catabolic process",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Omenn syndrome"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between guanosine pentaphosphate catabolic process and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "guanosine pentaphosphate catabolic process",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "multiple intestinal atresia"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Question: What is the association between guanosine pentaphosphate catabolic process and S-methylmethionine transmembrane transporter activity in a biomedical context?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "lung neoplasm",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, what is the relationship between lung neoplasm and guanosine pentaphosphate catabolic process?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "lung neoplasm",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between S-methylmethionine transmembrane transporter activity and lung neoplasm?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "lung neoplasm",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between S-methylmethionine transmembrane transporter activity and the occurrence of lung neoplasm?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "lung neoplasm",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts provided, the proposed question is:\n\nIs there a potential therapeutic target for lung neoplasm involving the inhibition of S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "lung neoplasm",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Is there a correlation between lung neoplasm and progressive language deterioration?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "lung neoplasm",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between lung neoplasm and hydroxypyruvate isomerase activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "lung neoplasm",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Which transporter is associated with lung neoplasm and subepithelial connective tissue of the prostatic gland?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "lung neoplasm",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ]
+        ],
+        "context": [
+            "Could divalent metal transporter 1 deficiency lead to anemia?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, a simple question could be: \n\nIs there a potential link between lung neoplasm and autism susceptibility 1?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "lung neoplasm",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ]
+        ],
+        "context": [
+            "What molecules are the multidrug transporter MDR3 targeting?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the provided facts, my proposed question is: What is the role of S-methylmethionine transmembrane transporter activity in lung neoplasm development?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "lung neoplasm",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Omenn syndrome"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the provided facts, a possible question could be:\n\nWhat is the relationship between lung neoplasm and Omenn syndrome?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "lung neoplasm",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "multiple intestinal atresia"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the association between lung neoplasm and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Prolonged QTc interval",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "How does modulation of S-methylmethionine transmembrane transporter activity affect the QTc interval in patients?\n Does the inhibition of S-methylmethionine transmembrane transporter activity lead to an increase or decrease in guanosine pentaphosphate levels?\n What are the potential implications of prolonged QTc interval associated with S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Prolonged QTc interval",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between S-methylmethionine transmembrane transporter activity and the risk of lung neoplasm?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Prolonged QTc interval",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the provided facts and examples, a proposed question could be:\n\nIs there a potential association between the inhibition of the S-methylmethionine transmembrane transporter activity and the development of a prolonged QTc interval?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Prolonged QTc interval",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, the proposed question is:\nHow does the inhibition of S-methylmethionine transmembrane transporter activity result in Prolonged QTc interval?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Prolonged QTc interval",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Is there a relationship between S-methylmethionine transmembrane transporter activity and Prolonged QTc interval?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Prolonged QTc interval",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between hydroxypyruvate isomerase activity and prolonged QTc interval?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Prolonged QTc interval",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts provided, the proposed question is:\n\nIs there a potential association between prolonged QTc interval and the subepithelial connective tissue of the prostatic gland?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Prolonged QTc interval",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts provided, the simple question I propose is:\n\nIs there a link between S-methylmethionine transmembrane transporter activity and drug-induced QT prolongation?\n\nPotential related questions could include:\n\n1. How does the inhibition of S-methylmethionine transmembrane transporter activity lead to prolonged QTc interval?\n2. Are there any other known associations between S-methylmethionine transmembrane transporter activity and human diseases or conditions?\n3. Can alterations in S-methylmethionine transmembrane transporter activity be a potential therapeutic target for autism susceptibility or QT interval abnormalities?\n4. Are there any known drugs or compounds that specifically target S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Prolonged QTc interval",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ]
+        ],
+        "context": [
+            "What molecules are the multidrug transporter MDR3 targeting?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, the proposed question would be:\n\nIs there a causal relationship between upper arm mesenchyme and Prolonged QTc interval?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Prolonged QTc interval",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Omenn syndrome"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "How is S-methylmethionine transmembrane transporter activity associated with Omenn syndrome and prolonged QTc interval?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Prolonged QTc interval",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "multiple intestinal atresia"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Given the facts:\n\n1. Prolonged QTc interval associated with S-methylmethionine transmembrane transporter activity\n2. S-methylmethionine transmembrane transporter activity associated with multiple intestinal atresia\n3. S-methylmethionine transmembrane transporter activity associated with prolonged QTc interval\n\nProposed question: How might the S-methylmethionine transmembrane transporter activity be related to both a prolonged QTc interval and multiple intestinal atresia?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "intracellularly ATP-gated chloride channel activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, the proposed question would be:\n\nWhat is the relationship between intracellularly ATP-gated chloride channel activity and the S-methylmethionine transmembrane transporter activity, and how do they relate to the guanosine pentaphosphate catabolic process?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "intracellularly ATP-gated chloride channel activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between intracellularly ATP-gated chloride channel activity and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "intracellularly ATP-gated chloride channel activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts given, the simple question could be:\n\nIs there a relationship between intracellularly ATP-gated chloride channel activity and the S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "intracellularly ATP-gated chloride channel activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between intracellularly ATP-gated chloride channel activity and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "intracellularly ATP-gated chloride channel activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between intracellularly ATP-gated chloride channel activity and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "intracellularly ATP-gated chloride channel activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Proposal: How is the intracellularly ATP-gated chloride channel activity associated with S-methylmethionine transmembrane transporter activity and hydroxypyruvate isomerase activity?\n\nExample question: What is the relationship between S-methylmethionine transmembrane transporter activity and intracellularly ATP-gated chloride channel activity?\n\nExample question: How is S-methylmethionine transmembrane transporter activity affected by hydroxypyruvate isomerase activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "intracellularly ATP-gated chloride channel activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, a simple question based on the biomedical knowledge graph could be:\n\nIs there a relationship between intracellularly ATP-gated chloride channel activity and subepithelial connective tissue of the prostatic gland?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "intracellularly ATP-gated chloride channel activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on these facts, a simple question could be:\n\nIs there a relationship between intracellularly ATP-gated chloride channel activity and autism susceptibility?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "intracellularly ATP-gated chloride channel activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between intracellularly ATP-gated chloride channel activity and S-methylmethionine transmembrane transporter activity in the context of upper arm mesenchyme?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "intracellularly ATP-gated chloride channel activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Omenn syndrome"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between intracellularly ATP-gated chloride channel activity and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "intracellularly ATP-gated chloride channel activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "multiple intestinal atresia"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the provided facts, the proposed question is:\n\nIs there a relationship between the inhibition of intracellularly ATP-gated chloride channel activity and the mechanism of action of Canagliflozin or Sotagliflozin?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Progressive language deterioration",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between S-methylmethionine transmembrane transporter activity and progressive language deterioration?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Progressive language deterioration",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Is there a correlation between the S-methylmethionine transmembrane transporter activity and the progression of lung neoplasms?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Progressive language deterioration",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ]
+        ],
+        "context": [
+            "What molecules are the multidrug transporter MDR3 targeting?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts provided, a possible question could be:\n\nIs there a genetic basis for the association between S-methylmethionine transmembrane transporter activity and progressive language deterioration, and if so, what genes are involved?\n\nExample question: What is the relationship between S-methylmethionine transmembrane transporter activity and Prolonged QTc interval, and how might this impact cardiac function?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Progressive language deterioration",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between S-methylmethionine transmembrane transporter activity and progressive language deterioration?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Progressive language deterioration",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ]
+        ],
+        "context": [
+            "Are adenylyl cyclases always transmembrane proteins?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the provided facts, my question would be:\nIs there a direct causal relationship between S-methylmethionine transmembrane transporter activity and progressive language deterioration?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Progressive language deterioration",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ]
+        ],
+        "context": [
+            "Are adenylyl cyclases always transmembrane proteins?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Is hydroxypyruvate isomerase activity associated with Progressive language deterioration?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Progressive language deterioration",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ]
+        ],
+        "context": [
+            "Are adenylyl cyclases always transmembrane proteins?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, I propose the following question:\n\nIs the progressive language deterioration associated with the dysfunction of the S-methylmethionine transmembrane transporter activity in the subepithelial connective tissue of the prostatic gland?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Progressive language deterioration",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between progressive language deterioration, S-methylmethionine transmembrane transporter activity, and autism susceptibility 1?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Progressive language deterioration",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ]
+        ],
+        "context": [
+            "Are adenylyl cyclases always transmembrane proteins?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts provided, my proposed question is:\n\nIs S-methylmethionine transmembrane transporter activity the cause or consequence of progressive language deterioration?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Progressive language deterioration",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Omenn syndrome"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ]
+        ],
+        "context": [
+            "What molecules are the multidrug transporter MDR3 targeting?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between S-methylmethionine transmembrane transporter activity and progressive language deterioration?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "Progressive language deterioration",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "multiple intestinal atresia"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ]
+        ],
+        "context": [
+            "List available methods for transmembrane protein topology prediction.",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between S-methylmethionine transmembrane transporter activity and progressive language deterioration?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "hydroxypyruvate isomerase activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between hydroxypyruvate isomerase activity and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "hydroxypyruvate isomerase activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Is there a relationship between hydroxypyruvate isomerase activity and lung neoplasm?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "hydroxypyruvate isomerase activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts provided, the proposed question is:\n\nIs there a direct association between hydroxypyruvate isomerase activity and Prolonged QTc interval?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "hydroxypyruvate isomerase activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between hydroxypyruvate isomerase activity and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "hydroxypyruvate isomerase activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts provided, my proposed question is:\n\nWhat is the relationship between hydroxypyruvate isomerase activity and Progressive language deterioration?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "hydroxypyruvate isomerase activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ]
+        ],
+        "context": [
+            "Which is the catalytic activity of the protein encoded by the gene KMT2C? ",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between hydroxypyruvate isomerase activity and S-methylmethionine transmembrane transporter activity?\nIs there any known protein that exhibits both hydroxypyruvate isomerase activity and S-methylmethionine transmembrane transporter activity?\nWhat is the role of S-methylmethionine transmembrane transporter in the hydroxypyruvate isomerase activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "hydroxypyruvate isomerase activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between hydroxypyruvate isomerase activity and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "hydroxypyruvate isomerase activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ]
+        ],
+        "context": [
+            "Could divalent metal transporter 1 deficiency lead to anemia?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the provided facts, a simple question could be:\n\nIs there a relationship between hydroxypyruvate isomerase activity and autism susceptibility?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "hydroxypyruvate isomerase activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on these facts, my proposed question would be:\n\nWhat is the relationship between hydroxypyruvate isomerase activity and upper arm mesenchyme in the context of S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "hydroxypyruvate isomerase activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Omenn syndrome"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the provided facts, the simple question that could be proposed is:\n\nIs there a direct interaction between hydroxypyruvate isomerase activity and Omenn syndrome, and if so, what is the nature of this interaction?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "hydroxypyruvate isomerase activity",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "multiple intestinal atresia"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ]
+        ],
+        "context": [
+            "Could divalent metal transporter 1 deficiency lead to anemia?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the provided facts, a possible question could be:\n\nIs there a potential relationship between hydroxypyruvate isomerase activity and multiple intestinal atresia?\n\nExample questions:\n\n1. Does the inhibition of hydroxypyruvate isomerase activity affect S-methylmethionine transmembrane transporter activity?\n2. Can the impairment of S-methylmethionine transmembrane transporter activity lead to altered hydroxypyruvate isomerase activity?\n3. Is there any known association between hydroxypyruvate isomerase activity and the development of multiple intestinal atresia?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "subepithelial connective tissue of prostatic gland",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the association between subepithelial connective tissue of the prostatic gland and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "subepithelial connective tissue of prostatic gland",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, my proposed question would be:\n\nIs there a potential association between S-methylmethionine transmembrane transporter activity and the development of lung neoplasm in individuals with subepithelial connective tissue of the prostatic gland?\n\nExample questions can be:\n1. Is there any evidence suggesting a relationship between the expression of S-methylmethionine transmembrane transporter activity and the incidence of lung neoplasm in individuals with subepithelial connective tissue of the prostatic gland?\n2. Are there any studies investigating the role of S-methylmethionine transmembrane transporter activity in the progression of lung neoplasm in individuals with subepithelial connective tissue of the prostatic gland?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "subepithelial connective tissue of prostatic gland",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ]
+        ],
+        "context": [
+            "Which is the chromosome area that the human gene coding for the dopamine transporter (DAT1) is located to?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, my proposed question is:\n\nIs there a potential association between the subepithelial connective tissue of the prostatic gland and prolonged QTc interval?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "subepithelial connective tissue of prostatic gland",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ]
+        ],
+        "context": [
+            "Inhibition of which transporter is the mechanism of action of drug Canagliflozin?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Which subepithelial connective tissue in the prostatic gland is associated with S-methylmethionine transmembrane transporter activity?\nWhat is the downstream activity associated with the inhibition of S-methylmethionine transmembrane transporter activity?\nWhat is the potential role of S-methylmethionine transmembrane transporter activity in the subepithelial connective tissue of the prostatic gland?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "subepithelial connective tissue of prostatic gland",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ]
+        ],
+        "context": [
+            "Which is the chromosome area that the human gene coding for the dopamine transporter (DAT1) is located to?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the relationship between S-methylmethionine transmembrane transporter activity and progressive language deterioration?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "subepithelial connective tissue of prostatic gland",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ]
+        ],
+        "context": [
+            "Which is the chromosome area that the human gene coding for the dopamine transporter (DAT1) is located to?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the provided facts, the proposed question is:\n\nIs there a correlation between the subepithelial connective tissue of the prostatic gland and the hydroxypyruvate isomerase activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "subepithelial connective tissue of prostatic gland",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ]
+        ],
+        "context": [
+            "Could divalent metal transporter 1 deficiency lead to anemia?",
+            "Which is the chromosome area that the human gene coding for the dopamine transporter (DAT1) is located to?"
+        ],
+        "answer_GPT3": "Based on the provided facts, the example questions could be:\n\n1. Is there a relationship between S-methylmethionine transmembrane transporter activity and the subepithelial connective tissue of the prostatic gland?\n2. Can the absence of S-methylmethionine transmembrane transporter activity affect the function of the subepithelial connective tissue of the prostatic gland?\n3. How does the S-methylmethionine transmembrane transporter activity influence the subepithelial connective tissue of the prostatic gland?\n4. Are there any genetic mutations or variations associated with S-methylmethionine transmembrane transporter activity in the subepithelial connective tissue of the prostatic gland?\n5. Can alterations in S-methylmethionine transmembrane transporter activity in the subepithelial connective tissue of the prostatic gland be related to any diseases or conditions?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "subepithelial connective tissue of prostatic gland",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ]
+        ],
+        "context": [
+            "Which transporter is inhibited by Sotagliflozin?",
+            "Could divalent metal transporter 1 deficiency lead to anemia?"
+        ],
+        "answer_GPT3": "Based on the facts provided, a proposed question could be: \n\nHow might dysregulation of S-methylmethionine transmembrane transporter activity impact autism susceptibility and the subepithelial connective tissue of the prostatic gland?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "subepithelial connective tissue of prostatic gland",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ]
+        ],
+        "context": [
+            "Which transporter is inhibited by Sotagliflozin?",
+            "Which is the chromosome area that the human gene coding for the dopamine transporter (DAT1) is located to?"
+        ],
+        "answer_GPT3": "Based on the given facts, the proposed question is:\n\nIs the S-methylmethionine transmembrane transporter activity associated with both the subepithelial connective tissue of the prostatic gland and the upper arm mesenchyme?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "subepithelial connective tissue of prostatic gland",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Omenn syndrome"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ]
+        ],
+        "context": [
+            "Could divalent metal transporter 1 deficiency lead to anemia?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, my proposed question is: Is there a potential link between Omenn syndrome and the development or function of the prostatic gland?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "subepithelial connective tissue of prostatic gland",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "multiple intestinal atresia"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ]
+        ],
+        "context": [
+            "Which transporter is inhibited by Sotagliflozin?",
+            "Could divalent metal transporter 1 deficiency lead to anemia?"
+        ],
+        "answer_GPT3": "Based on the given facts, the proposed question is:\n\nIs there a potential link between subepithelial connective tissue of the prostatic gland and multiple intestinal atresia, mediated by S-methylmethionine transmembrane transporter activity?\n\nPotential questions derived from this proposed question could be:\n\n1. What is the role of S-methylmethionine transmembrane transporter activity in the development of multiple intestinal atresia?\n2. How does the S-methylmethionine transmembrane transporter activity influence the subepithelial connective tissue of the prostatic gland?\n3. Are there any other known functions or associations of S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "autism susceptibility 1",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ]
+        ],
+        "context": [
+            "Could divalent metal transporter 1 deficiency lead to anemia?",
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?"
+        ],
+        "answer_GPT3": "Based on the given facts, the question could be: \"Is there a potential link between the guanosine pentaphosphate catabolic process and autism susceptibility 1?\""
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "autism susceptibility 1",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ]
+        ],
+        "context": [
+            "Which transporter is inhibited by Sotagliflozin?",
+            "Could divalent metal transporter 1 deficiency lead to anemia?"
+        ],
+        "answer_GPT3": "Does the inhibition of S-methylmethionine transmembrane transporter activity have the potential to affect both lung neoplasms and autism susceptibility 1?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "autism susceptibility 1",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ]
+        ],
+        "context": [
+            "Which transporter is inhibited by Sotagliflozin?",
+            "Could divalent metal transporter 1 deficiency lead to anemia?"
+        ],
+        "answer_GPT3": "Question: Is there a potential link between autism susceptibility 1 and prolonged QTc interval?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "autism susceptibility 1",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ]
+        ],
+        "context": [
+            "Could divalent metal transporter 1 deficiency lead to anemia?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts from the biomedical knowledge graph, my proposed question would be:\n\nIs there a potential association between intracellularly ATP-gated chloride channel activity and autism susceptibility 1?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "autism susceptibility 1",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ]
+        ],
+        "context": [
+            "Which transporter is inhibited by Sotagliflozin?",
+            "Could divalent metal transporter 1 deficiency lead to anemia?"
+        ],
+        "answer_GPT3": "Based on the given facts, a proposed question could be:\n\nIs there a potential connection between autism susceptibility 1 and progressive language deterioration?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "autism susceptibility 1",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ]
+        ],
+        "context": [
+            "Which transporter is inhibited by Sotagliflozin?",
+            "Could divalent metal transporter 1 deficiency lead to anemia?"
+        ],
+        "answer_GPT3": "What is the relationship between autism susceptibility 1 and hydroxypyruvate isomerase activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "autism susceptibility 1",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Could divalent metal transporter 1 deficiency lead to anemia?"
+        ],
+        "answer_GPT3": "What is the relationship between S-methylmethionine transmembrane transporter activity and autism susceptibility 1?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "autism susceptibility 1",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ]
+        ],
+        "context": [
+            "List mouse models for autism spectrum disorder (ASD).",
+            "Is autism one of the characteristics of Moebius syndrome?"
+        ],
+        "answer_GPT3": "Can S-methylmethionine transmembrane transporter activity be used as a potential biomarker for autism susceptibility 1?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "autism susceptibility 1",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Could divalent metal transporter 1 deficiency lead to anemia?"
+        ],
+        "answer_GPT3": "Based on the given facts, the proposed question could be: How is the autism susceptibility 1 gene associated with upper arm mesenchyme and S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "autism susceptibility 1",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Omenn syndrome"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ]
+        ],
+        "context": [
+            "Which transporter is inhibited by Sotagliflozin?",
+            "Could divalent metal transporter 1 deficiency lead to anemia?"
+        ],
+        "answer_GPT3": "Based on the given facts, the simple question I propose is:\n\nIs there a potential association between autism susceptibility 1 and Omenn syndrome?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "autism susceptibility 1",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "multiple intestinal atresia"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ]
+        ],
+        "context": [
+            "Which transporter is inhibited by Sotagliflozin?",
+            "Could divalent metal transporter 1 deficiency lead to anemia?"
+        ],
+        "answer_GPT3": "Question: How is S-methylmethionine transmembrane transporter activity related to both autism susceptibility 1 and multiple intestinal atresia?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "upper arm mesenchyme",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "guanosine pentaphosphate catabolic process"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ]
+        ],
+        "context": [
+            "Which thyroid hormone transporter is implicated in thyroid hormone resistance syndrome?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts provided, the proposed question could be: \n\nIs there a relationship between S-methylmethionine transmembrane transporter activity and guanosine pentaphosphate catabolic process in the upper arm mesenchyme?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "upper arm mesenchyme",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "lung neoplasm"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ]
+        ],
+        "context": [
+            "Is cadherin a plasma membrane marker?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Is there a relationship between upper arm mesenchyme and lung neoplasm, both associated with S-methylmethionine transmembrane transporter activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "upper arm mesenchyme",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Prolonged QTc interval"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ]
+        ],
+        "context": [
+            "Is cadherin a plasma membrane marker?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, a possible question could be: \n\nIs the presence of S-methylmethionine transmembrane transporter activity in the upper arm mesenchyme associated with Prolonged QTc interval?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "upper arm mesenchyme",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "intracellularly ATP-gated chloride channel activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ]
+        ],
+        "context": [
+            "Is cadherin a plasma membrane marker?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the facts provided, the proposed question could be:\n\nIs there a relationship between upper arm mesenchyme and intracellularly ATP-gated chloride channel activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "upper arm mesenchyme",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Progressive language deterioration"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ]
+        ],
+        "context": [
+            "Is cadherin a plasma membrane marker?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, a proposed question could be:\n\nIs there a relationship between upper arm mesenchyme, S-methylmethionine transmembrane transporter activity, and progressive language deterioration?\n\nExamples of possible related questions could be:\n\n1. What is the molecular mechanism underlying the association between S-methylmethionine transmembrane transporter activity and progressive language deterioration?\n2. How does upper arm mesenchyme influence S-methylmethionine transmembrane transporter activity?\n3. Are there any other biological processes or functions associated with S-methylmethionine transmembrane transporter activity and progressive language deterioration?\n4. Can the modulation of S-methylmethionine transmembrane transporter activity in the upper arm mesenchyme be a potential therapeutic approach for addressing progressive language deterioration?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "upper arm mesenchyme",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "hydroxypyruvate isomerase activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ]
+        ],
+        "context": [
+            "Is cadherin a plasma membrane marker?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts from the biomedical knowledge graph, the proposed question could be:\n\nIs there a relationship between upper arm mesenchyme and hydroxypyruvate isomerase activity?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "upper arm mesenchyme",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "subepithelial connective tissue of prostatic gland"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ]
+        ],
+        "context": [
+            "Is cadherin a plasma membrane marker?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, a possible question could be: Is there a direct relationship between the transporter activity associated with upper arm mesenchyme and the transporter activity associated with subepithelial connective tissue of the prostatic gland?\n\nOther examples of related questions could be:\n- Are there any known inhibitors or activators of S-methylmethionine transmembrane transporter activity?\n- Is there any known relationship between the upper arm mesenchyme and the subepithelial connective tissue of the prostatic gland?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "upper arm mesenchyme",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "autism susceptibility 1"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ]
+        ],
+        "context": [
+            "Is cadherin a plasma membrane marker?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, the proposed question could be:\n\nDoes the association between upper arm mesenchyme and autism susceptibility 1 imply a potential role of S-methylmethionine transmembrane transporter activity in the development of autism?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "upper arm mesenchyme",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ]
+        ],
+        "context": [
+            "Which transporter is inhibited by Sotagliflozin?",
+            "Is cadherin a plasma membrane marker?"
+        ],
+        "answer_GPT3": "Is there a correlation between the expression of S-methylmethionine transmembrane transporter activity and upper arm mesenchyme in human tissues?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "upper arm mesenchyme",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "Omenn syndrome"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ]
+        ],
+        "context": [
+            "Is cadherin a plasma membrane marker?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "Based on the given facts, a proposed question could be: Does dysregulation of S-methylmethionine transmembrane transporter activity contribute to the pathogenesis of Omenn syndrome in the upper arm mesenchyme?\nOther possible related questions could be:\n- How does S-methylmethionine transmembrane transporter activity impact the upper arm mesenchyme?\n- Are there any other genetic abnormalities associated with upper arm mesenchyme and S-methylmethionine transmembrane transporter activity?\n- Is there any therapeutic intervention targeting S-methylmethionine transmembrane transporter activity for the treatment of Omenn syndrome?\n- Can the dysregulation of S-methylmethionine transmembrane transporter activity be a potential biomarker for diagnosing Omenn syndrome in the upper arm mesenchyme?"
+    },
+    {
+        "type": "7",
+        "value": [
+            [
+                "upper arm mesenchyme",
+                "associated%20with",
+                "S-methylmethionine transmembrane transporter activity"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "multiple intestinal atresia"
+            ],
+            [
+                "S-methylmethionine transmembrane transporter activity",
+                "associated%20with",
+                "upper arm mesenchyme"
+            ]
+        ],
+        "context": [
+            "Which intraflagellar transport (IFT) motor protein has been linked to human skeletal ciliopathies?",
+            "Which transporter is inhibited by Sotagliflozin?"
+        ],
+        "answer_GPT3": "What is the role of S-methylmethionine transmembrane transporter activity in the development of multiple intestinal atresia and its association with upper arm mesenchyme?"
+    }
+]
