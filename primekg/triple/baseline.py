@@ -168,6 +168,22 @@ def call_openAI(triples):
         print(f"processing percentage {len(with_ans)/100}.")
     return with_ans
 
+
+
+
+    def query(payload):
+        API_TOKEN = "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"
+        API_URL = "https://api-inference.huggingface.co/models/iarfmoose/t5-base-question-generator"
+        headers = {"Authorization": f"Bearer {API_TOKEN}"}
+        response = requests.post(API_URL, headers=headers, json=payload)
+        return response.json()
+        
+    output = query({
+        "inputs": "The answer to the universe is",
+    })
+
+
+    
 if __name__ == '__main__':
     API_key = 
 #    combine the triples with similar questions from bioAsk
@@ -179,8 +195,18 @@ if __name__ == '__main__':
     
 
     # already run with top 100 samples, saved in contextualized_graph_ans.json
-    with_ans = call_openAI(triples=triples[:1])
+#    with_ans = call_openAI(triples=triples[:1])
 
-    with open('chatGPT_ans.json', 'w') as f:
-        json.dump(with_ans, f, indent =4)
-    f.close()
+#    with open('chatGPT_ans.json', 'w') as f:
+#        json.dump(with_ans, f, indent =4)
+#    f.close()
+    for triple in triples[:1]:
+        text = triple["value"]
+        text = [" ".join(i) for i in text]
+        text = "; ".join(text).strip().replace("%20", ' ')
+        input = f"<answer> {triple["value"][0][0]} <context> {input}"
+
+        output = query({
+                        "inputs": input,
+                        })
+        print(output)
