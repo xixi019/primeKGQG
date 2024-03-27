@@ -7,6 +7,7 @@ from transformers.utils.quantization_config import BitsAndBytesConfig
 import torch
 from mistral.util import form_prompt_gpt
 import ipdb
+
 def call_mistral(triples):
     ans, out = list(), list()
     bnb_config = BitsAndBytesConfig(
@@ -22,7 +23,9 @@ def call_mistral(triples):
                                                 model_id,
                                                 quantization_config = bnb_config,
                                                 torch_dtype=torch.float16,
-                                                attn_implementation="flash_attention_2",)
+                                                attn_implementation="flash_attention_2",
+                                                device_map="cuda",
+)
 
     tokenizer.pad_token_id = model.config.eos_token_id    
     tokenizer.bos_token_id=model.config.bos_token_id
@@ -45,6 +48,7 @@ def call_mistral(triples):
                     }
                 ]
         text = tokenizer.apply_chat_template(chat, tokenize=False, add_generation_prompt=True, return_tensors="pt")
+        triple["prompt"] = text
         data_set.append({"prompt":text, "triple":triple})
     
     dataset = Dataset.from_list(data_set)
@@ -54,7 +58,7 @@ def call_mistral(triples):
         ans.extend(out)
 
     for text, triple in zip(ans, triples):
-        triple["question_mistral_noContext"] = text["generated_text"].split("</s>")[-1]
+        triple["generated_text"] = text["generated_text"][len(triple["prompt"]):]
         out.append(triple)
 
 
@@ -76,46 +80,30 @@ def call_bioLLM(triples):
                                                 model_id,
                                                 quantization_config= bnb_config,
                                                 torch_dtype=torch.float16,
-                                                attn_implementation="flash_attention_2",)
+                                                attn_implementation="flash_attention_2",
+                                                device_map="cuda",
+                                                )
 
     tokenizer.pad_token_id = model.config.eos_token_id    
     tokenizer.bos_token_id=model.config.bos_token_id
     tokenizer.eos_token_id=model.config.eos_token_id
     
-    
-    systems, usrs = form_prompt_gpt(triples, True)
-    data_set = []
-    '''
-    for system, usr, triple in zip(systems, usrs, triples):       
-        prompt = system + "/n/n" + usr
-        inputs = tokenizer(prompt, return_tensors="pt", add_special_tokens=False).input_ids.to(model.device)
-        outputs = model.generate(input_ids=inputs, max_length=2048)[0]
-
-        answer_start = int(inputs.shape[-1])
-        pred = tokenizer.decode(outputs[answer_start:], skip_special_tokens=True)
-
-        print(f'### User Input:\n{prompt}\n\n### Assistant Output:\n{pred}')
-
-        triple["question_bioLLM"] = pred.split("The question is:")[-1]
-        out.append(triple)
-
-    '''
     pipe = pipeline("text-generation", model=model, tokenizer=tokenizer, do_sample = True, temperature=0.1, top_k=50, top_p=0.02)
-
+    
     systems, usrs = form_prompt_gpt(triples, True)
+    data_set, answers = list(), list()
     for system, usr, triple in zip(systems, usrs, triples):       
         prompt = system + "/n/n" + usr
-        data_set.append({"prompt":prompt})
+        data_set.append(prompt)
+        triple["prompt"] = prompt
     
-    dataset = Dataset.from_list(data_set)
-    
-    answers = list()
-    
-    for ans in pipe(KeyDataset(dataset, "prompt"), batch_size=15, max_new_tokens=200):
+    dataset = Dataset.from_dict({"prompt":data_set})
+    for ans in tqdm(pipe(KeyDataset(dataset, "prompt"), batch_size=15, max_new_tokens=200)):
         answers.append(ans[0]["generated_text"])
     for ans, triple in zip(answers, triples):
-        triple["generated_answer"] = ans
+        triple["generated_text"] = ans[len(triple["prompt"]):]
         out.append(triple)    
+    print(f"file from baseline.py {out}")
     return out
 
 def pos_processing(ans):
