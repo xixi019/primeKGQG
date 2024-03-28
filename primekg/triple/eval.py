@@ -7,6 +7,7 @@ from mistral.mistral_baseline import call_bioLLM, call_mistral
 from SPARQLWrapper import SPARQLWrapper, JSON
 import time
 from transformers.utils import logging
+from util import form_prompt_gpt
 
 logging.set_verbosity_info()
 logger = logging.get_logger("transformers")
@@ -136,10 +137,11 @@ class eval:
         return out
     
     def test_(self):
-        call_bioLLM(self.triples)
+        form_prompt_gpt(self.triples)
 
 if __name__ == "__main__":
     model, data = "mistral", "sqb"
+    self.test_()
     eval = eval()
     eval.load_sqb(convert=False)
     eval.run_inference(model, data)
