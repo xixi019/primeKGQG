@@ -8,7 +8,7 @@ import torch
 from mistral.util import form_prompt_gpt
 import ipdb
 
-def call_mistral(triples):
+def call_mistral(triples, baseline=True):
     ans, out = list(), list()
     bnb_config = BitsAndBytesConfig(
                                     load_in_4bit=True,
@@ -33,7 +33,7 @@ def call_mistral(triples):
 
     pipe = pipeline("text-generation", model=model, tokenizer=tokenizer, do_sample = True, temperature=0.1, top_k=50, top_p=0.02)
 
-    systems, usrs = form_prompt_gpt(triples, True)
+    systems, usrs = form_prompt_gpt(triples, True, baseline=True)
     data_set = []
     for system, usr, triple in zip(systems, usrs, triples):       
         chat = [
