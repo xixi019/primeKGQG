@@ -1,4 +1,0 @@
-# What are the taxa available in Bgee?
-
-PREFIX up:<http://purl.uniprot.org/core/> 
-select * { ?taxon a up:Taxon.}

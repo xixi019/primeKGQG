@@ -1,3 +1,0 @@
-# Which drugs have bipolar disorder as indication?
-
-SELECT DISTINCT ?x WHERE {?x <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/indication> ?k. FILTER (contains (str(?k), bipolar disorder)) }
