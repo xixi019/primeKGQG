@@ -3,7 +3,33 @@
 ### This is a repo for generation questions from PrimeKG
   The dataset is uploaded in the zenedo: https://zenodo.org/records/13348627
 
+# Project Name
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
+[![Build Status](https://img.shields.io/travis/username/repo.svg)](https://travis-ci.org/username/repo)
+
+### Description
+
+This code base extracts subgraphs from an endpoint, form sparqls, extract answers.
+The above info would be sent to LLM for question generation.
+
+---
+
+
+## Prerequisites
+
+- Python Version:3.8 and above
+- pip install -r requirement.tex 
+
+
+## How to run
+- go to folder 'triple-extract'
+- run endExtract.py and statistics.py
+- they would extract subgraphs based on the network motifs and output json files with related info
+
+- go to folder question-gen
+- rub mistral_baseline.py
+- generate question from LLM
 
 ### Please cite our publication if you find this work useful
 
