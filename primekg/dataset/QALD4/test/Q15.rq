@@ -1,3 +1,0 @@
-# Are there drugs that target the Protein kinase C beta type?
-
-ASK WHERE {?a <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/target> <http://www4.wiwiss.fu-berlin.de/drugbank/resource/targets/997> }
