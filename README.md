@@ -23,11 +23,11 @@ The above info would be sent to LLM for question generation.
 
 
 ## How to run
-- go to folder 'triple-extract'
+- go to folder 'extract'
 - run endExtract.py and statistics.py
 - they would extract subgraphs based on the network motifs and output json files with related info
 
-- go to folder question-gen
+- go to folder generation
 - rub mistral_baseline.py
 - generate question from LLM
 
